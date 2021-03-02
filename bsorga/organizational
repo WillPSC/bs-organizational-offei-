@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo Start Executing SQL commands
+echo "SELECT DISTINCT mail FROM users INNER JOIN exchanges ON exchanges.user_from =  WHERE exchanges.user_to = users.id" | mysql -u root -p $1
